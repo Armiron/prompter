@@ -1,5 +1,4 @@
-import 'package:prompter_ak/src/option.dart';
-import 'package:prompter_ak/src/prompter.dart';
+import 'package:prompter_ak/prompter_ak.dart';
 
 void main(List<String> args) {
   var options = [Option("I want red", '#f00'), Option("I want blue", '#00f')];
