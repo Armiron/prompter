@@ -10,6 +10,12 @@ class Terminal {
   void clearScreen() {
     if (Platform.isWindows) {
       stdout.write('\x1B[2J\x1B[0f');
-    } else {}
+    } else {
+      stdout.write('\x1B[2J\x1B[3J\x1B[H');
+    }
+  }
+
+  String collectInput() {
+    return stdin.readLineSync();
   }
 }
